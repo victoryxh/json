@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en_US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="json2.js"></script>
+    <script src="script.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .form {
+            padding: 20px;
+        }
+    </style>
+    <title>Cover Band's Set List</title>
+</head>
+
+<body>
+    <h2>Serialized Display:</h2>
+    <p id="serialized"></p>
+    <h2>User Friendly Display:</h2>
+    <div class="content">
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                <th>Year</th>
+            </tr>
+            <tr id="one">
+                <th id="oneTitle">OK</th>
+                <th id="oneArtist"></th>
+                <th id="oneGenre"></th>
+                <th id="oneYear"></th>
+            </tr>
+            <tr id="two">
+                <th id="twoTitle"></th>
+                <th id="twoArtist"></th>
+                <th id="twoGenre"></th>
+                <th id="twoYear"></th>
+            </tr>
+            <tr id="three">
+                <th id="threeTitle"></th>
+                <th id="threeArtist"></th>
+                <th id="threeGenre"></th>
+                <th id="threeYear"></th>
+            </tr>
+            <tr id="four">
+                <th id="fourTitle"></th>
+                <th id="fourArtist"></th>
+                <th id="fourGenre"></th>
+                <th id="fourYear"></th>
+            </tr>
+            <tr id="five">
+                <th id="fiveTitle"></th>
+                <th id="fiveArtist"></th>
+                <th id="fiveGenre"></th>
+                <th id="fiveYear"></th>
+            </tr>
+            <tr id="six">
+                <th id="sixTitle"></th>
+                <th id="sixArtist"></th>
+                <th id="sixGenre"></th>
+                <th id="sixYear"></th>
+            </tr>
+            <tr id="seven">
+                <th id="sevenTitle"></th>
+                <th id="sevenArtist"></th>
+                <th id="sevenGenre"></th>
+                <th id="sevenYear"></th>
+            </tr>
+            <tr id="eight">
+                <th id="eightTitle"></th>
+                <th id="eightArtist"></th>
+                <th id="eightGenre"></th>
+                <th id="eightYear"></th>
+            </tr>
+            <tr id="nine">
+                <th id="nineTitle"></th>
+                <th id="nineArtist"></th>
+                <th id="nineGenre"></th>
+                <th id="nineYear"></th>
+            </tr>
+            <tr id="ten">
+                <th id="tenTitle"></th>
+                <th id="tenArtist"></th>
+                <th id="tenGenre"></th>
+                <th id="tenYear"></th>
+            </tr>
+        </table>
+    </div>
+    <div class="form">
+        <h5>Select a genre</h5>
+        <form method="POST">
+            <select id="selected">
+                <option>All</option>
+                <option>Electronic</option>
+                <option>New-age</option>
+                <option>Pop</option>
+                <option>Rock</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" id="button">See the list</button>
+        </form>
+    </div>
+</body>
+
+</html>
